@@ -1,9 +1,9 @@
-FROM microsoft/dotnet:lastest
+FROM microsoft/dotnet:latest
 
-COPY ./app
+COPY . /app
 WORKDIR /app
 
 EXPOSE 5000/tcp
-ENV ASPNETCORE_URL http://+5000
+ENV ASPNETCORE_URL http://+:5000
 
-ENTRYPOINT ["dotnet","Contactas.dll"]
+ENTRYPOINT ["dotnet","KiDelicia.dll"]
